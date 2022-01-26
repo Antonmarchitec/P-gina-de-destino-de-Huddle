@@ -177,7 +177,7 @@ a {
   max-width: 1440px;
   height: 100vh;
   background: #674baf;
-  margin-top: -20px;
+  margin: -20px auto;
 }
 .CONT_BASE .CONT_BASE_2 {
   width: 85%;
