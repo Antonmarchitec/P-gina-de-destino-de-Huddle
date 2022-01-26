@@ -1,0 +1,167 @@
+@import "colors";
+
+
+.caja_bloque_A{
+    width: 100%;
+    padding: 10px 0px;
+    //height: 400px;
+    //background: rgb(47, 111, 230);
+    .figura{
+        width: 150px;
+        height: 50px;
+        background-image: url(../images/logo.svg);
+        background-size: 100% 100%;
+    }
+    .imagen{
+        margin-top: 20px;
+        width: 520px;
+        height: 350px;
+        background-image: url(../images/illustration-mockups.svg);
+        background-size: 100% 100%; 
+        transition: transform ;
+        transition-duration: 0.5s;
+    }
+    .imagen:hover{
+        transform: scale(1.05,1.05);
+    }
+}
+
+
+@media (min-width:20px) and (max-width:720px){
+    .caja_bloque_A{
+        .figura{
+            width: 150px;
+            height: 50px;
+            background-image: url(../images/logo.svg);
+            background-size: 100% 100%;
+            
+        }
+        .imagen{
+            width: 90%;
+            height: 260px;
+            margin:50px auto;
+         
+        }
+    }
+}
+
+
+
+.caja_bloque_B{
+    margin-top: 100px;
+    width: 400px;
+    padding: 10px 0px;
+    //background: violet;
+    position: relative;
+    .titless{
+        width: 320px;
+        color: white;
+        font-weight: 600;
+    }
+    .parrafo{
+       color:rgb(221, 212, 212);
+       font-weight: 400;
+    }
+    .boton{
+       margin-top: 20px;
+       padding: 5px 20px;
+       border: none;
+       border-radius: 25px;
+       color: $color-pri;
+       cursor: pointer;
+       transition: .5s all;
+    }
+    .boton:hover{
+        background: $color-sec;
+        color: white;
+    }
+    .redes{
+        width: 120px;
+        height: 30px;
+        //background: brown;
+        position: absolute;
+        right:0px;
+        bottom: -120px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .box{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            border:1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .fab{
+                color: white;
+            }
+        }
+        .box:hover{
+            border:1px solid $color-sec;
+            box-shadow: 0px 0px 10px $color-sec;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width:20px) and (max-width:720px){
+    .caja_bloque_B{
+        margin:10px auto;
+        width: 90%;
+
+
+
+        .titless{
+            //background: hotpink;
+            width: 90%;
+            text-align: center;
+            margin: auto;
+        }
+        .parrafo{
+            width: 100%;
+            //background: indianred;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .boton{
+           margin-top: 30px;
+           padding: 10px 20px;
+           margin-left: calc(50% - 95px);
+           width: 200px;
+        }
+        .redes{
+            width: 120px;
+            height: 30px;
+            //background: brown;
+            position: absolute;
+            right:calc(50% - 65px);
+            bottom: -100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .box{
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                border:1px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .fab{
+                    color: white;
+                }
+            }
+            .box:hover{
+                border:1px solid $color-sec;
+                box-shadow: 0px 0px 10px $color-sec;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+   

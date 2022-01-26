@@ -1,0 +1,243 @@
+/*
+## Colors
+
+### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.caja_bloque_A {
+  width: 100%;
+  padding: 10px 0px;
+}
+.caja_bloque_A .figura {
+  width: 150px;
+  height: 50px;
+  background-image: url(../images/logo.svg);
+  background-size: 100% 100%;
+}
+.caja_bloque_A .imagen {
+  margin-top: 20px;
+  width: 520px;
+  height: 350px;
+  background-image: url(../images/illustration-mockups.svg);
+  background-size: 100% 100%;
+  transition: transform;
+  transition-duration: 0.5s;
+}
+.caja_bloque_A .imagen:hover {
+  transform: scale(1.05, 1.05);
+}
+
+@media (min-width: 20px) and (max-width: 720px) {
+  .caja_bloque_A .figura {
+    width: 150px;
+    height: 50px;
+    background-image: url(../images/logo.svg);
+    background-size: 100% 100%;
+  }
+  .caja_bloque_A .imagen {
+    width: 90%;
+    height: 260px;
+    margin: 50px auto;
+  }
+}
+.caja_bloque_B {
+  margin-top: 100px;
+  width: 400px;
+  padding: 10px 0px;
+  position: relative;
+}
+.caja_bloque_B .titless {
+  width: 320px;
+  color: white;
+  font-weight: 600;
+}
+.caja_bloque_B .parrafo {
+  color: #ddd4d4;
+  font-weight: 400;
+}
+.caja_bloque_B .boton {
+  margin-top: 20px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 25px;
+  color: #674baf;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.caja_bloque_B .boton:hover {
+  background: #e882e8;
+  color: white;
+}
+.caja_bloque_B .redes {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  bottom: -120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.caja_bloque_B .redes .box {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caja_bloque_B .redes .box .fab {
+  color: white;
+}
+.caja_bloque_B .redes .box:hover {
+  border: 1px solid #e882e8;
+  box-shadow: 0px 0px 10px #e882e8;
+  cursor: pointer;
+}
+
+@media (min-width: 20px) and (max-width: 720px) {
+  .caja_bloque_B {
+    margin: 10px auto;
+    width: 90%;
+  }
+  .caja_bloque_B .titless {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  .caja_bloque_B .parrafo {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .caja_bloque_B .boton {
+    margin-top: 30px;
+    padding: 10px 20px;
+    margin-left: calc(50% - 95px);
+    width: 200px;
+  }
+  .caja_bloque_B .redes {
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    right: calc(50% - 65px);
+    bottom: -100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .caja_bloque_B .redes .box {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .caja_bloque_B .redes .box .fab {
+    color: white;
+  }
+  .caja_bloque_B .redes .box:hover {
+    border: 1px solid #e882e8;
+    box-shadow: 0px 0px 10px #e882e8;
+    cursor: pointer;
+  }
+}
+/*
+## Colors
+
+### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.CONT_BASE {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  background: #674baf;
+  margin-top: -20px;
+}
+.CONT_BASE .CONT_BASE_2 {
+  width: 85%;
+  height: 100vh;
+  margin: auto;
+  background-image: url(../images/bg-desktop.svg);
+  background-size: 100% 100%;
+}
+.CONT_BASE .CONT_BASE_2 .CONT_GRID {
+  margin: 20px auto;
+  width: 90%;
+  padding: 10px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 550px 400px;
+  grid-template-rows: repeat(1, auto);
+  grid-template-areas: "BLOQUE_A    BLOQUE_B";
+}
+.CONT_BASE .CONT_BASE_2 .CONT_GRID .BLOQUE_A {
+  padding: 10px 0px;
+  grid-area: BLOQUE_A;
+}
+.CONT_BASE .CONT_BASE_2 .CONT_GRID .BLOQUE_B {
+  padding: 10px 0px;
+  grid-area: BLOQUE_B;
+}
+
+@media (min-width: 20px) and (max-width: 720px) {
+  .CONT_BASE {
+    width: 100%;
+    max-width: 1440px;
+    height: 180vh;
+    background: #674baf;
+    margin-top: -20px;
+  }
+  .CONT_BASE .CONT_BASE_2 {
+    width: 100%;
+    height: 430px;
+    margin: auto;
+    background-image: url(../images/bg-mobile.svg);
+    background-size: 100% 100%;
+  }
+  .CONT_BASE .CONT_BASE_2 .CONT_GRID {
+    margin: 20px auto;
+    width: 90%;
+    padding: 10px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "BLOQUE_A" "BLOQUE_B";
+  }
+  .CONT_BASE .CONT_BASE_2 .CONT_GRID .BLOQUE_A {
+    padding: 10px 0px;
+    grid-area: BLOQUE_A;
+  }
+  .CONT_BASE .CONT_BASE_2 .CONT_GRID .BLOQUE_B {
+    padding: 10px 0px;
+    grid-area: BLOQUE_B;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

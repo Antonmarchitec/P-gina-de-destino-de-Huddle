@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.CONT_BASE{
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    background: $color-pri;
+    margin-top: -20px;
+   
+    .CONT_BASE_2{
+        width: 85%;
+        height: 100vh;
+        margin: auto;
+        //border: 1px solid white;
+        background-image: url(../images/bg-desktop.svg);
+        background-size: 100% 100%;
+       
+        .CONT_GRID{
+            margin: 20px auto;
+            width: 90%;
+            padding: 10px;
+            //background: rgba(22, 22, 22, 0.479);
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 550px  400px;
+            grid-template-rows: repeat(1,auto);
+            grid-template-areas: "BLOQUE_A    BLOQUE_B";
+            .BLOQUE_A{
+              
+                padding:10px 0px;
+                //background: rgb(41, 41, 41);
+                grid-area: BLOQUE_A;
+            }
+            .BLOQUE_B{
+               
+                padding:10px 0px;
+                //background: rgb(41, 41, 41);
+                grid-area: BLOQUE_B;
+            }
+
+        }
+  
+    }
+ 
+        
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:20px) and (max-width:720px){
+    .CONT_BASE{
+        width: 100%;
+        max-width: 1440px;
+        height: 180vh;
+        background: $color-pri;
+        margin-top:-20px;
+       
+        .CONT_BASE_2{
+            width:100%;
+            height: 430px;
+            margin: auto;
+            //border: 1px solid white;
+            background-image: url(../images/bg-mobile.svg);
+            background-size: 100% 100%;
+           
+            .CONT_GRID{
+                margin: 20px auto;
+                width: 90%;
+                padding: 10px;
+                //background: rgba(22, 22, 22, 0.479);
+                display: grid;
+                grid-gap: 15px;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: "BLOQUE_A"
+                                     "BLOQUE_B";
+                .BLOQUE_A{
+                  
+                    padding:10px 0px;
+                    //background: rgb(41, 41, 41);
+                    grid-area: BLOQUE_A;
+                }
+                .BLOQUE_B{
+                   
+                    padding:10px 0px;
+                    //background: rgb(41, 41, 41);
+                    grid-area: BLOQUE_B;
+                }
+    
+            }
+      
+        }
+     
+            
+    }
+}
+
